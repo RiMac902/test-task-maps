@@ -71,14 +71,16 @@ const CustomGoogleMap = () => {
             const script = document.createElement("script");
             script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCohypMvHQY53-nZhUOl_eHWIzmTenwoCo&callback=initMap`;
             script.defer = true;
-            script.async = false;
+            script.async = true;
             script.onload = () => {
-                setIsMapLoaded(true);
+                initMap();
             };
+
             script.onerror = () => {
                 console.error('Error loading Google Maps');
                 setIsMapLoaded(false);
             };
+
             document.head.appendChild(script);
         }
 
