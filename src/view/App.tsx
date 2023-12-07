@@ -1,4 +1,4 @@
-import {Box, Button, Paper, Typography} from "@mui/material";
+import {Box, Paper, Typography} from "@mui/material";
 import {indigo} from "@mui/material/colors";
 import CustomGoogleMap from "./CustomGoogleMap.tsx";
 
@@ -25,7 +25,6 @@ const App = () => {
                 borderRadius: 5,
             }}>
                 <CustomGoogleMap/>
-                <Button>Delete Markers</Button>
             </Paper>
         </Box>
     );
