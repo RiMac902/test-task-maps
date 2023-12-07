@@ -6,7 +6,7 @@ let labelIndex = 1;
 const center = {lat: 49.8397, lng: 24.0296};
 const CustomGoogleMap = () => {
     const [isMapLoaded, setIsMapLoaded] = useState<boolean>(false);
-    const [markers, setMarkers] = useState<any[]>([]);
+    const [_, setMarkers] = useState<any[]>([]);
 
     useEffect(() => {
         const initMap = () => {
