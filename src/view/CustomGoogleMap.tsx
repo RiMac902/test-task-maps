@@ -43,7 +43,7 @@ const CustomGoogleMap = () => {
                     const updatedLat = event.latLng.lat();
                     const updatedLng = event.latLng.lng();
 
-                    await updateQuest(id! ,label, {lat: updatedLat, lng: updatedLng});
+                    await updateQuest(id!, {lat: updatedLat, lng: updatedLng});
                     console.log('Marker dragged. Updated position:', {lat: updatedLat, lng: updatedLng});
                 })
                 window.google.maps.event.addListener(marker, "click", () => {

@@ -30,7 +30,7 @@ export const getId = async () => {
 };
 
 
-export const updateQuest = async (questId: string, label: string, location: { lat: number, lng: number }): Promise<void> => {
+export const updateQuest = async (questId: string, location: { lat: number, lng: number }): Promise<void> => {
     try {
         const ids = await getId();
         const matchingId = ids!.find((id) => id.docId === questId);
